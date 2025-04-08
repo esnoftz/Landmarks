@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
+        LandmarkList()
+        /*VStack {
             MapView()
                 .frame(height: 300)
             
@@ -43,10 +44,11 @@ struct ContentView: View {
             .padding()
             
             Spacer()
-        }
+        }*/
     }
 }
 
 #Preview {
     ContentView()
+        .environment(ModelData())
 }
